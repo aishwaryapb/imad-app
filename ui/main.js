@@ -26,7 +26,7 @@ btn.onclick = function() {
     };
 
     //Make request
-    request.opne('GET','http://aishbannimatti.imad.hasura-app.io/counter',true);
+    request.open('GET','http://aishbannimatti.imad.hasura-app.io/counter',true);
     request.send(null);
 };
 
