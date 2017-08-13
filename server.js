@@ -101,10 +101,6 @@ app.get('/counter', function (req,res){
     res.send(counter.toString());
 });
 
-app.get('/:articleName', function(req,res){
-    var articleName=req.params.articleName;
-    res.send(createTemplate(articles[articleName]));
-});
 
 
 app.get('/ui/main.js', function (req, res) {
@@ -130,6 +126,12 @@ names.push(name);
 //JSON
 res.send(JSON.stringify(names));
 });
+
+app.get('/:articleName', function(req,res){
+    var articleName=req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
+});
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
