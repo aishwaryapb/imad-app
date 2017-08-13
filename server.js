@@ -37,7 +37,7 @@ var articles = {
     },
     'article-three' :{
         title:'Article Three|Aishwarya PB',
-        heading:'Article Three'
+        heading:'Article Three',
         date:'Aug 23, 2017',
         content:
             `<p>
