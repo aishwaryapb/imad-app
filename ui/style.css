@@ -33,7 +33,7 @@ body
 	top:230px;
 }
 #photo {
-	padding-bottom:20px; /* Height of the footer element */
+	/*padding-bottom:20px; /* Height of the footer element */
 	width:200px;
 	height:200px;
 	background-image:url("DP.png");
