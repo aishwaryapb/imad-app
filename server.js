@@ -127,7 +127,7 @@ var name=req.params.name;
 names.push(name);
 
 //JSON
-res.send(JSON.stringify(name));
+res.send(JSON.stringify(names));
 });
 
 
