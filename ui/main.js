@@ -11,7 +11,7 @@ btn.onclick = function() {
     
     //Capture the response and store it in a variable
     request.onreadystatechange = function() {
-        if(request.readyState == XMLHttpRequst.DONE)
+        if(request.readyState == XMLHttpRequest.DONE)
         {   
             //Take action
             if(request.status == 200) {
