@@ -36,8 +36,7 @@ btn.onclick = function() {
 var submit = document.getElementById('submit_btn');
 submit.onclick=function() {
     //Make a request to the server and send the name
-    var nameInput=document.getElementById('name');
-    var name = nameInput.value;
+    
     var request = new XMLHttpRequest();
     
     //Capture the response and store it in a variable
@@ -65,11 +64,14 @@ submit.onclick=function() {
     };
 
     //Make request
+    var nameInput=document.getElementById('name');
+    var name = nameInput.value;
+    
     request.open('GET','http://aishbannimatti.imad.hasura-app.io/submit-name?name=' + name,true);
     request.send(null);
     
     //Capture the list of names and render the list
-    var names=['name1','name2','name3'];
+ 
     var list = '';
     for(var i=0;i<names.length;i++)
     {
