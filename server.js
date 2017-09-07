@@ -99,7 +99,7 @@ app.post('/login', function(req,res) {
         }
         else {
             if(result.rows.length === 0) {
-                res.send(403).send('Username/Password Invalid');
+                res.status(403).send('Username/Password Invalid');
             }
             else {
                 var dbString = result.rows[0].password;
@@ -110,7 +110,7 @@ app.post('/login', function(req,res) {
                     res.send('Credentials correct!');
                 }
                 else {
-                    res.send(403).send('Username/Password Invalid');
+                    res.status(403).send('Username/Password Invalid');
                 }
             }
         } 
